@@ -17,7 +17,7 @@ a:hover, a:focus {
 }
 
 .featurette {
-  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  margin: 14px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -27,13 +27,42 @@ a:hover, a:focus {
   letter-spacing: -1px;
 }
 
+@media (max-width: 400px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 50px;
+  }
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featurette-heading {
+    margin-top: 80px;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
 
 /* Footer
 -------------------------- */
 .bs-footer {
-  padding-top: 40px;
   padding-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #777;
   text-align: center;
   border-top: 1px solid #e5e5e5;
@@ -90,14 +119,4 @@ a:hover, a:focus {
     line-height: 1.4;
   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 100px;
-  }
 }
