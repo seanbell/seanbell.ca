@@ -45,7 +45,7 @@
 	<div class="container marketing">
 
 	  <div class="row featurette">
-		<div class="col-sm-7">
+		<div class="col-sm-6">
 			<h2 class="featurette-heading">Learning Visual Similarity for Product Design with <span class="text-muted">Convolutional Neural Networks</span></h2>
 		  <p class="lead">
 			<a href="#">Sean Bell</a>,
@@ -57,8 +57,9 @@
 			  <a class="btn btn-default" href="#" disabled="disabled">Supplemental coming soon</a>
 		  </p>
 		</div>
-		<div class="col-sm-5">
-			<img class="img-responsive img-circle" src="img/sig2015-rep.jpg" alt="sig2015">
+		<div class="col-sm-6">
+			<!--<img class="img-responsive img-circle" src="img/sig2015-rep.jpg" alt="sig2015">-->
+			<div id="openseadragon1" style="width: 100%; height: 555px;"></div>
 		</div>
 	  </div>
 
@@ -149,6 +150,27 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
+
+	<script src="openseadragon/openseadragon.min.js"></script>
+	<script type="text/javascript">
+	window.openseadragon_viewer = OpenSeadragon({
+		id: "openseadragon1",
+		prefixUrl: "openseadragon/images/",
+		tileSources: {
+			Image: {
+				xmlns:    "http://schemas.microsoft.com/deepzoom/2008",
+				Url:      "https://styledb-data.s3.amazonaws.com/deepzoom/embedding533_files/",
+				Format:   "jpg",
+				Overlap:  "1",
+				TileSize: "384",
+				Size: {
+					Height: "28672",
+					Width:  "28672",
+				}
+			}
+		}
+	});
+	</script>
 
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
