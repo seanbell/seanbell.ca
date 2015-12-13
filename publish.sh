@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avzhP -e ssh dist/* fox:/home/WIN/sbell/MyWeb/
+rsync -avzhP -e ssh dist/* sbell@fox.cs.cornell.edu:/home/WIN/sbell/MyWeb/
