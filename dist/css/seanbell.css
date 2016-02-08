@@ -123,6 +123,10 @@ ul.footer-links {
   max-width: 100%;
 }
 
+.jumbotron {
+  margin-bottom: 20px;
+}
+
 .jumbotron h1 {
   margin-top: 10px;
   font-size: 40px;
