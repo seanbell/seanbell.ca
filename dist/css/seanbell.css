@@ -119,6 +119,10 @@ ul.footer-links {
   display: none;
 }
 
+.popover {
+  max-width: 100%;
+}
+
 .jumbotron h1 {
   margin-top: 10px;
   font-size: 40px;
